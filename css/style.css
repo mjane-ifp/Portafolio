@@ -322,7 +322,7 @@ h4{
 .peu {
     background-color: var(--darker-bg);
     border-top: 1px solid var(--border-color);
-    padding: 2rem 5%;
+    padding: 2rem 5% 0 5%;
 }
 
 .peu-content {
