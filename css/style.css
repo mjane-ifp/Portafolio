@@ -1,55 +1,346 @@
 :root{
- /*aqui van les variables*/
+    --primary-color: #6c63ff;
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+    --light-text: #f5f5f5;
+    --gray-text: #aaaaaa;
+    --card-bg: #1e1e1e;
+    --border-color: #2d2d2d;
+    --transition: all .3s ease;
 }
 
-*{
- /*aqui va el resset*/
+* {
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
-@font-face{
+html{
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary-color) var(--dark-bg);
+    scrollbar-width: thin;
 }
 
-
-
-/*aqui van propietats generals*/
-
-.capcelera{
-    width: 100%;
-    height: 50px;
-    background: red;
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    line-height: 1.6;
 }
 
-li{
-   margin: 1rem;
-   float: left;
-   list-style-type: none;
-}
-
-.activitat{
-    width: 400px;
-    height: 10rem;
-    background: red;
-    margin: 20px auto;
-    align-content: center;
-    text-align: center;
-    font-size: 40px;
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 ul{
-    width: 36rem;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#cap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
     margin: auto;
 }
 
-li:hover{
-    opacity: 50%;
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-/*aqui van propietats responsives*/
+.logo span{
+    color: var(--primary-color);
+}
 
-@media (max-width:480px){}
+.caplinks{
+    display: flex;
+    gap: 2rem;
+}
+
+.caplinks a{
+    position: relative;
+    padding: .5rem 0;
+    transition: var(--transition);
+}
+
+.caplinks a:after{
+    content:"" ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.caplinks a:hover{
+    color: var(--primary-color);
+}
+
+.caplinks a:hover:after {
+    width: 100%;
+}
+
+.inici{
+    height: 500px;
+    width: 100%;
+    background-image: url(img/3348271.jpg);
+    background-size: 100%;
+    align-content: center;
+    margin-top: 65px;
+}
+
+.inici span{
+    color: var(--primary-color);
+}
+
+.cos{
+    padding: 6rem 5%;
+    margin: 0 auto;
+}
+
+.section-title{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.timeline {
+    position: relative; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline:before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 20px; 
+    width: 2px; 
+    height: 100%; 
+    background-color: var(--border-color);
+}
+
+.timeline-item{
+    position: relative; 
+    margin-bottom: 3rem; 
+    padding-left: 50px;
+}
+
+.timeline-item:before{
+    content: "";
+    position: absolute;
+    top: 5px; 
+    left: 10px; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: var(--card-bg);
+    padding: 1.5rem; 
+    border-radius: 10px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.aea{
+    display: inline-block; 
+    padding: .3rem .8rem;
+    background-color:  rgba(108, 99, 255, 0.2); 
+    color: var(--primary-color); 
+    border-radius: 5px; 
+    font-size: .9rem; 
+    margin-bottom: 1rem;
+}
+
+.timeline-content h3 {
+    margin-bottom: .5rem; 
+    font-size: 1.3rem;
+}
+
+.timeline-content p{
+    color: var(--gray-text); 
+    margin-bottom: 1rem; 
+    font-size: 1rem; 
+    font-weight: 500;
+}
+
+.skills {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: .8rem;
+    color: var(--gray-text);
+}
+.skills li {
+    font-size: .8rem; 
+    padding: .3rem .8rem;
+    background-color: var(--darker-bg); 
+    border-radius: 20px;
+}
+
+.skills li:hover {
+    font-size: .8rem; 
+    padding: .3rem .8rem;
+    background-color: rgba(108, 99, 255, 0.2); 
+    border-radius: 20px;
+}
+
+.skills span{
+    color: var(--primary-color);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--card-bg); 
+    border-radius: 10px; 
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%; display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.5);
+}
+
+.project-img{
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%; /* O el tamaño que necesites */
+    overflow: hidden; 
+}
+
+.project-img img{
+    transition: var(--transition);
+    width: 100%;
+}
+
+
+h4{
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 4;
+    font-size: 2.2rem;
+}
+
+.project-info {
+    padding: 1.5rem; 
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 { 
+    margin-bottom: .8rem; 
+    font-size: 1.3rem;
+}
+
+.project-info p {
+    color: var(--gray-text); 
+    margin-bottom: 1rem; 
+    font-size: •95rem; 
+    flex-grow: 1;
+}
+
+.project-tech {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tech span { 
+    font-size: .8rem;
+    padding: .2rem .6rem;
+    background-color: var(--darker-bg); 
+    border-radius: 20px;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links a {
+    font-size: .9rem;
+    color: var(--gray-text);
+    transition: var(--transition);
+}
+
+.project-links a:hover{
+    color: var(--primary-color);
+}
+
+.peu {
+    background-color: var(--darker-bg);
+    border-top: 1px solid var(--border-color);
+    padding: 2rem 5%;
+}
+
+.peu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.examens{
+    margin-top: 3rem;
+}
+
+@media (max-width:480px){
+    body {
+    background-color: rgba(43, 22, 52, 0.9);
+  }
+}
 
 @media (min-width:481px) and (max-width:1279px){}
 
