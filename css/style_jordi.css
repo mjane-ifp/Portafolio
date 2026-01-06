@@ -1,0 +1,134 @@
+:root {
+    /* Aquí hi van les variables */
+
+}
+
+*, *:after, *:before {
+    /* Aquí hi va el reset */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+@font-face {
+    /* Aquí hi van les fonts personalitzades */
+}
+
+
+    /* Aquí hi van propietats generals */
+
+body {
+    background: ivory;
+}
+
+li { 
+    width: 10rem; /*mida1*/
+    height: 10rem; /*mida1*/
+    border-radius: 50%;
+    background: red;
+    margin: 1rem; /*mida2*/
+    float: left;
+    list-style-type: none;
+    text-align: center;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    line-height: 10rem;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+
+}
+
+a:active {
+    color: yellowgreen;
+}
+
+
+
+ul {
+    width: 36rem;
+    margin: auto;
+}
+
+
+    /* Aquí hi van propietats responsives */
+
+
+
+@media (max-width:480px) 
+    /* Aquí hi va la versió mòbil */
+ {
+
+    
+ }
+
+@media (min-width:481px) and (max-width:1279px) 
+ {
+
+        li {
+            background: green;
+        }
+    
+ }
+
+
+@media (min-width:1280px)
+ {
+    body {
+        background: pink;
+    }
+
+    
+
+
+
+
+
+
+
+    Mobilefirst
+    estructura de mòbil  - bàsica que surt per defecte
+
+    estructura d'escriptori -- fer les modificacions (columnes amb float)
+
+
+    Desktopfirst
+
+      estructura d'escriptori -- fer les modificacions (columnes amb float)
+
+      .caixa float
+
+      estructura de mòbil -- desfer les modificacions
+
+      .caixa no-float
+
+
+ :root
+    gravetat gravetat de la terra
+    temperatura  temperatura de la terra
+
+
+    html 
+      head
+      body
+        div.cap 
+            div.opcions 
+        div.cos 
+            div.mostres 
+                div.mostra1 
+
+                a:visited {color: pink;}
+                a:link {color: white;}
+                a:hover 
+                a:active 
+                
+                

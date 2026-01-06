@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    background: #222;
+    font-family: Helvetica, sans-serif;
+}
+
+.capçelera{
+    background: #222;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    color: #fff;
+}
+
+.logo{
+    background-image: url(imatges/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 50px;
+    margin: 5px 20px 5px 20px;
+    float: left;
+}
+
+ul {
+    overflow: hidden;
+    display: inline;
+    vertical-align: bottom;
+}
+
+li {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+a{
+    color: white;
+}
+
+.documentals{
+    height: 950px;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+.vistos{
+    height: 350px;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    -webkit-filter: grayscale(100%);
+}
+
+.pendents{
+    height: 450px;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+.vistes{
+    height: 150px;
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+h1{
+    color: #fff;
+}
+.contingut{
+    background: black;
+    width: 175px;
+    height: 250px;
+    float: left;
+    margin: 10px 10px 40px 10px;
+}
+
+.peli1{
+    background-image: url(imatges/1982Koyaanisqatsi.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli2{
+    background-image: url(imatges/2004YTuQueSabes.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli3{
+    background-image: url(imatges/2005Earthlings.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli4{
+    background-image: url(imatges/2007Helvetica.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli5{
+    background-image: url(imatges/2007Sicko.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli6{
+    background-image: url(imatges/2008Zeitgeist2.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli7{
+    background-image: url(imatges/2009ArtAndCopy.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli8{
+    background-image: url(imatges/2009Home.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.peli9{
+    background-image: url(imatges/2009RipARemixManifesto.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.peli10{
+    background-image: url(imatges/2010ComprarTirarComprar.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli11{
+    background-image: url(imatges/2010InsideJob.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.peli12{
+    background-image: url(imatges/2011LaDoctrinaDeShock.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli13{
+    background-image: url(imatges/2012SearchingForSugarMan.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.peli14{
+    background-image: url(imatges/2012TheActOfKilling.jpg);
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+    border-radius: 5px;
+}
+
+.peli15{
+    background-image: url(imatges/2013ElEspirituDel45.jpg);
+    border-radius: 5px;
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.peli16{
+    background-image: url(imatges/XXXXpeli.jpg);
+    border-radius: 5px;
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.peli17{
+    background-image: url(imatges/quasinegre.png);
+    border-radius: 5px;
+    width: 175px;
+    height: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.nom{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.any{
+    font-size: 11px;
+    margin-top: 10px;
+    float: left;
+    color: #ccc;
+}
+
+.categoria{
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 100px;
+    color: #ccc;
+}
+
+.contingut:hover{
+    opacity: 50%;
+}

@@ -1,0 +1,56 @@
+:root{
+ /*aqui van les variables*/
+}
+
+*{
+ /*aqui va el resset*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face{
+}
+
+
+
+/*aqui van propietats generals*/
+
+.capcelera{
+    width: 100%;
+    height: 50px;
+    background: red;
+}
+
+li{
+   margin: 1rem;
+   float: left;
+   list-style-type: none;
+}
+
+.activitat{
+    width: 400px;
+    height: 10rem;
+    background: red;
+    margin: 20px auto;
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+ul{
+    width: 36rem;
+    margin: auto;
+}
+
+li:hover{
+    opacity: 50%;
+}
+
+/*aqui van propietats responsives*/
+
+@media (max-width:480px){}
+
+@media (min-width:481px) and (max-width:1279px){}
+
+@media (min-width:1280px){}

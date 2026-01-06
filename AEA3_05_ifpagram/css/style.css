@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenidor {
+    width: 1716px;
+    margin: auto;
+}
+
+.nav {
+    height: 166px;
+}
+
+.friends {
+    height: 180px;
+    width: 1300px;
+    margin: auto;
+}
+
+.pics {
+    background-color: salmon;
+    height: 1860px;
+}
+
+.logo {
+    width: 223px;
+    height: 49px;
+    background-color: yellow;
+    float: left;
+    background-image: url(../img/images/ifpagram_03.jpg);
+    margin: 50px 0 0 0;
+}
+
+.menu {
+    width: 320px;
+    height: 49px;
+    float: left;
+    margin: 50px 0 0 475px;
+}
+
+.menu ul {
+    margin:0;
+}
+
+.menu ul li {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    float: left;
+    display: block;
+    background-image: url(../img/images/menu_05.jpg);
+}
+
+.menu ul li:hover {
+    opacity: 0.6;
+}
+
+.inici {
+    background-position: -13px -5px;
+}
+
+.cerca {
+    background-position: -98px -5px;
+}
+
+.directes {
+    background-position: -181px -5px;
+}
+
+.favorits {
+    background-position: -265px -5px;
+}
+
+.perfil {
+    width: 80px;
+    height: 120px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    opacity: 0.6;
+
+}
+.foto {
+    width: 80px;
+    height: 80px;
+    background-color: ivory;
+    border-radius: 50%;
+    background-image: url(../img/perfil.jpg);
+    border: brown 5px solid;
+    box-shadow: inset 0px 0px 2px white;
+}
+
+.perfil:hover {
+    opacity: 1;
+}
+
+.afegir {
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    left: 60px;
+    top: -75px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}

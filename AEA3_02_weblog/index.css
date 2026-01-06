@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+h1{
+    color: rgb(183, 210, 253);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 37, 118);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.contenidor{
+    width: 1280px;
+    margin: auto;
+}
+.cap{
+    
+    height: 120px;
+}
+.cos{
+    font-family: monospace
+    
+}
+.peu{
+    height: 300px;
+}
+li{
+    height: 50px; 
+    width: 180px;
+    margin: 10px;
+    float: left;
+}
+.esquerra, .centre, .dreta{
+    width: 20%;
+    float: left;
+}
+.esquerra{
+    background-color: rgb(183, 210, 253);
+    
+}
+.centre{
+    background-color:rgb(0, 37, 118);
+    color: white;
+    width: 60%;
+    overflow: scroll;
+        height: 600px;
+
+}
+.dreta{
+    background-color: rgb(183, 210, 253);
+}
+p{
+    text-indent: 50px;
+}
+a{
+    color: white;
+}

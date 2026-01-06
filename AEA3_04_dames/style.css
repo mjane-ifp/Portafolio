@@ -1,0 +1,87 @@
+body{}
+
+.contenidor{
+    width: 800px;
+    height: 800px;
+    background-color: grey;
+    margin: auto;
+    border: 10px solid grey;
+}
+
+.filera:nth-child(2n){
+    background-color: white;
+    width: 800px;
+    height: 100px;
+}
+
+.filera:nth-child(2n+1){
+    background-color: black;
+    width: 800px;
+    height: 100px;
+}
+
+.casella{
+    width: 80px;
+    height: 80px;
+    background-color: gold;
+    padding: 10px;
+    background-image: linear-gradient(45deg, gold, orange);
+    float: left;
+}
+
+.filera:nth-child(2n) .casella:nth-child(2n) {
+    background-image: linear-gradient(45deg, gold, orange);
+}
+.filera:nth-child(2n) .casella:nth-child(2n+1) {
+    background-image: linear-gradient(45deg, violet , purple);
+}
+
+.filera:nth-child(2n+1) .casella:nth-child(2n) {
+    background-image: linear-gradient(45deg, violet , purple);
+}
+.filera:nth-child(2n+1) .casella:nth-child(2n+1) {
+    background-image: linear-gradient(45deg, gold, orange);
+}
+
+.fitxa{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px rgb(67, 67, 67);
+}
+.filera:nth-child(2n) .casella:nth-child(2n) .fitxa{
+    background-image: linear-gradient(45deg, black, rgb(100, 100, 100));
+}
+.filera:nth-child(2n) .casella:nth-child(2n+1) .fitxa{
+    background-image: linear-gradient(45deg, rgb(208, 208, 208), white);
+}
+
+.filera:nth-child(2n+1) .casella:nth-child(2n) .fitxa{
+    background-image: linear-gradient(45deg, rgb(208, 208, 208), white);
+}
+.filera:nth-child(2n+1) .casella:nth-child(2n+1) .fitxa{
+    background-image: linear-gradient(45deg, black, rgb(100, 100, 100));
+}
+
+.filera:nth-child(3) .fitxa, .filera:nth-child(4) .fitxa, .filera:nth-child(5) .fitxa, .filera:nth-child(6) .fitxa{
+    display: none;
+}
+.fitxa{
+    position: relative;
+}
+
+.filera:nth-child(1) .fitxa:hover{
+    top: 200px;
+}
+
+.filera:nth-child(2) .fitxa:hover{
+    top: 100px;
+}
+
+.filera:nth-child(7) .fitxa:hover{
+    top: -100px;
+}
+
+.filera:nth-child(8) .fitxa:hover{
+    top: -200px;
+}

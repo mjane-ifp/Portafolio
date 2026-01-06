@@ -1,0 +1,95 @@
+body{
+    background: white;
+}
+
+.fulla {
+    width: 100px;
+    height: 100px;
+    background: green;
+    border-radius: 100% 0% 100% 0% ;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    transform-origin: 0 100px;
+    background-image: linear-gradient(45deg, rgb(56, 0, 28), rgb(255, 104, 220));
+}
+
+.flor{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.f1{
+    transform: rotate(0deg);
+}
+
+.f2{
+    transform: rotate(60deg);
+}
+
+.f3{
+    transform: rotate(120deg);
+}
+
+.f4{
+    transform: rotate(180deg);
+}
+
+.f5{
+    transform: rotate(240deg);
+}
+
+.f6{
+    transform: rotate(300deg);
+}
+
+.cor{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    background-image: radial-gradient(yellow,orange);
+}
+
+@keyframes rotacio{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.tronco{
+    height: 300px;
+    width: 15px;
+    position: absolute;
+    background: rgb(78, 131, 78);
+    margin-left: 140px;
+    top: 150px;
+}
+
+.hoja{
+    height: 100px;
+    width: 100px;
+    border-radius: 50% 0% 50% 0%;
+    background: rgb(78, 131, 78);
+    position: absolute;
+    margin-left: 155px;
+    top: 300px;
+    transform: rotate(10deg)
+}
+
+.conjunt:hover .flor{
+    animation: 5s rotacio linear infinite;
+}
+
+.conjunt{
+    height: 450px;
+    width: 300px;
+}
