@@ -350,6 +350,12 @@ h4{
     .caplinks{
         gap: 1rem;
     }
+    .cos{
+        margin: 0 3rem 0 3rem;
+    }
+    .projects{
+        margin: 5rem 0 5rem 0;
+    }
 }
 
 @media (min-width:481px) and (max-width:1279px){
