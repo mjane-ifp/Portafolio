@@ -13,7 +13,7 @@ body{
 }
 
 .logo{
-    background-image: url(imatges/logo.png);
+    background-image: url(../img/logo.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 40px;
@@ -78,7 +78,7 @@ h1{
 }
 
 .peli1{
-    background-image: url(imatges/1982Koyaanisqatsi.jpg);
+    background-image: url(../img/1982Koyaanisqatsi.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ h1{
 }
 
 .peli2{
-    background-image: url(imatges/2004YTuQueSabes.jpg);
+    background-image: url(../img/2004YTuQueSabes.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ h1{
 }
 
 .peli3{
-    background-image: url(imatges/2005Earthlings.jpg);
+    background-image: url(../img/2005Earthlings.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ h1{
 }
 
 .peli4{
-    background-image: url(imatges/2007Helvetica.jpg);
+    background-image: url(../img/2007Helvetica.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ h1{
 }
 
 .peli5{
-    background-image: url(imatges/2007Sicko.jpg);
+    background-image: url(../img/2007Sicko.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -123,7 +123,7 @@ h1{
 }
 
 .peli6{
-    background-image: url(imatges/2008Zeitgeist2.jpg);
+    background-image: url(../img/2008Zeitgeist2.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ h1{
 }
 
 .peli7{
-    background-image: url(imatges/2009ArtAndCopy.jpg);
+    background-image: url(../img/2009ArtAndCopy.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ h1{
 }
 
 .peli8{
-    background-image: url(imatges/2009Home.jpg);
+    background-image: url(../img/2009Home.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@ h1{
 }
 
 .peli9{
-    background-image: url(imatges/2009RipARemixManifesto.jpg);
+    background-image: url(../img/2009RipARemixManifesto.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ h1{
 }
 
 .peli10{
-    background-image: url(imatges/2010ComprarTirarComprar.jpg);
+    background-image: url(../img/2010ComprarTirarComprar.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@ h1{
 }
 
 .peli11{
-    background-image: url(imatges/2010InsideJob.jpg);
+    background-image: url(../img/2010InsideJob.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ h1{
 }
 
 .peli12{
-    background-image: url(imatges/2011LaDoctrinaDeShock.jpg);
+    background-image: url(../img/2011LaDoctrinaDeShock.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ h1{
 }
 
 .peli13{
-    background-image: url(imatges/2012SearchingForSugarMan.jpg);
+    background-image: url(../img/2012SearchingForSugarMan.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -191,7 +191,7 @@ h1{
 }
 
 .peli14{
-    background-image: url(imatges/2012TheActOfKilling.jpg);
+    background-image: url(../img/2012TheActOfKilling.jpg);
     width: 175px;
     height: 100%;
     background-repeat: no-repeat;
@@ -200,7 +200,7 @@ h1{
 }
 
 .peli15{
-    background-image: url(imatges/2013ElEspirituDel45.jpg);
+    background-image: url(../img/2013ElEspirituDel45.jpg);
     border-radius: 5px;
     width: 175px;
     height: 100%;
@@ -209,7 +209,7 @@ h1{
 }
 
 .peli16{
-    background-image: url(imatges/XXXXpeli.jpg);
+    background-image: url(../img/XXXXpeli.jpg);
     border-radius: 5px;
     width: 175px;
     height: 100%;
@@ -218,7 +218,7 @@ h1{
 }
 
 .peli17{
-    background-image: url(imatges/quasinegre.png);
+    background-image: url(../img/quasinegre.png);
     border-radius: 5px;
     width: 175px;
     height: 100%;
