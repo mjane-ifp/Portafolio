@@ -107,9 +107,13 @@ img{
     height: 500px;
     width: 100%;
     background-image: url(../img/3348271.jpg);
-    background-size: 100%;
+    background-repeat: no-repeat;
     align-content: center;
     margin-top: 65px;
+}
+
+.inici h1{
+    margin-left: 15rem;
 }
 
 .inici span{
@@ -253,7 +257,7 @@ img{
     display: flex; 
     justify-content: center; 
     align-items: center;
-    width: 100%; /* O el tamaño que necesites */
+    width: 100%;
     overflow: hidden; 
 }
 
@@ -322,7 +326,7 @@ h4{
 .peu {
     background-color: var(--darker-bg);
     border-top: 1px solid var(--border-color);
-    padding: 2rem 5% 0 5%;
+    padding: 2rem 5% 2rem 5%;
 }
 
 .peu-content {
@@ -336,12 +340,17 @@ h4{
     margin-top: 3rem;
 }
 
-@media (max-width:480px){
-    body {
-    background-color: rgba(43, 22, 52, 0.9);
-  }
+@media (max-width:480px){}
+
+@media (min-width:481px) and (max-width:1279px){
+    .cos{
+        margin: 0 3rem 0 3rem;
+    }
+    .projects{
+        margin: 5rem 0 5rem 0;
+    }
+    .caplinks{
+        gap: 1rem;
+    }
 }
-
-@media (min-width:481px) and (max-width:1279px){}
-
 @media (min-width:1280px){}
