@@ -353,34 +353,31 @@ img{
 @media (max-width:480px){
     #cap {
         flex-direction: column;
-        align-items: center;
-        padding: 1rem 2%;
+        gap: 1rem;
+        padding: 1rem;
     }
 
     .caplinks {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 1rem;
-        width: 100%;
-        text-align: center;
+        justify-content: center;
     }
 
     .inici {
         height: auto;
-        padding: 4rem 2%;
-        margin-top: 65px; 
+        padding: 4rem 5%;
+        margin-top: 90px;
         text-align: center;
         background-position: center;
     }
 
     .inici h1 {
         margin-left: 0;
-        font-size: 1.5rem;
-        line-height: 1.3;
+        font-size: 1.6rem;
     }
 
-    .timeline {
-        padding-left: 0;
-        max-width: 95%;
+    .cos {
+        padding: 4rem 5%;
     }
 
     .timeline:before {
@@ -388,21 +385,19 @@ img{
     }
 
     .timeline-item {
-        padding-left: 35px;
+        padding-left: 30px;
     }
 
     .timeline-item:before {
-        left: 0;
+        left: 1px;
     }
 
     .projects-container {
-        grid-template-columns: 1fr; 
-        gap: 1.5rem;
-        padding: 0 2%;
+        grid-template-columns: 1fr;
     }
 
-    .project-img h4 {
-        font-size: 1.5rem;
+    h4 {
+        font-size: 1.6rem;
     }
 
     .peu-content {
