@@ -146,3 +146,42 @@ a{
 #alternador input[type=checkbox]:checked+label~.desplega{
   left: 0rem;
 }
+
+/* Aquí comença elements responsius */
+
+@media (max-width:480px) 
+{
+    #alternador{
+        display: block;
+    }
+
+    .menuhoritzontal{
+        display: none;
+    }
+    
+}
+
+@media (min-width:481px) and (max-width:1279px) 
+{
+    #alternador{
+        display: block;
+    }
+
+    .menuhoritzontal{
+        display: none;
+    }
+
+}
+
+
+@media (min-width:1280px) 
+{
+    #alternador{
+        display: none;
+    }
+
+    .menuhoritzontal{
+        display: block;
+    }
+
+}
