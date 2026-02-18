@@ -17,9 +17,7 @@
             padding-top: 5px;
             padding-right: 25px;
             padding-bottom: 5px;
-            padding-left: 25px;
-
-            
+            padding-left: 25px; 
         }
         p {
             width: 350px;
@@ -29,6 +27,7 @@
             line-height: 22px;
         }
         img {
+            padding: 25px;
         }
         .menu img {
             padding: 5px;
@@ -116,8 +115,6 @@
             box-shadow: 4px 4px 8px black;
             padding: 0;
             margin: 0;
-            
-
             text-align: center;
             font-size: 100px;
             line-height: 120px;
@@ -128,6 +125,45 @@
             position: relative;
             bottom: -3px;
         }
+
+        @media screen and (max-width: 640px){
+            .coneix, .tot, .util, .rapid, .facil, .arreu, .canvia{
+                background-position: 0 300px;
+                background-size: 100vw;
+            }
+            .coneix, .facil{
+                background-color: red;
+            }
+            li {
+            display: block;
+            background-color: red;
+            border-radius: 0%;
+            text-align: center;
+            margin: 1px 0;
+            padding: 2px;
+            align-content: center;
+            margin: 1px;
+            }
+
+            li:hover{
+                background-color: rgba(255, 0, 0, 0.671);
+            }
+
+            li a {
+                color: white;
+            }
+
+           .menu{
+            height: 100%;
+           }
+
+           .menu img{
+            display: block;
+            margin: auto;
+            margin-bottom: -15px;
+           }
+        }    
+
     </style>
 </head>
 <body>
