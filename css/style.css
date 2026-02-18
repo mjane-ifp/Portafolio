@@ -232,6 +232,18 @@ img{
     color: var(--primary-color);
 }
 
+.project-card:target {
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.7);
+    transform: translateY(-3px);
+    border: 1px solid var(--primary-color);
+}
+
+.projects-container:hover .project-card:target {
+    box-shadow: none;
+    transform: none;
+    border: none;
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
