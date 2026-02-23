@@ -361,6 +361,10 @@ img{
     margin-top: 3rem;
 }
 
+.project-card:hover .project-img img {
+    transform: scale(1.5);
+}
+
 @media (max-width:480px){
     #cap {
         flex-direction: column;
