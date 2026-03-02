@@ -1,19 +1,3 @@
-// =============================
-// NAVBAR SCROLL EFFECT
-// =============================
-const header = document.querySelector(".cap");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 60) {
-        header.style.background = "rgba(10, 10, 10, 0.98)";
-        header.style.boxShadow = "0 5px 25px rgba(0,0,0,0.6)";
-        header.style.transition = "all 0.3s ease";
-    } else {
-        header.style.background = "rgba(10, 10, 10, 0.9)";
-        header.style.boxShadow = "none";
-    }
-});
-
 
 // =============================
 // SCROLL REVEAL (cards + timeline)
@@ -54,16 +38,51 @@ window.addEventListener("scroll", () => {
 // TYPING EFFECT AL HERO
 // =============================
 const heroTitle = document.querySelector(".inici h1");
-const originalText = heroTitle.innerHTML;
+
+const nodes = Array.from(heroTitle.childNodes);
+
 heroTitle.innerHTML = "";
 
-let i = 0;
+let nodeIndex = 0;
+let charIndex = 0;
 
 function typeEffect() {
-    if (i < originalText.length) {
-        heroTitle.innerHTML += originalText.charAt(i);
-        i++;
-        setTimeout(typeEffect, 30);
+    if (nodeIndex >= nodes.length) return;
+
+    const currentNode = nodes[nodeIndex];
+
+    if (currentNode.nodeType === Node.TEXT_NODE) {
+        if (charIndex < currentNode.textContent.length) {
+            heroTitle.append(currentNode.textContent[charIndex]);
+            charIndex++;
+            setTimeout(typeEffect, 30);
+        } else {
+            nodeIndex++;
+            charIndex = 0;
+            typeEffect();
+        }
+    } 
+
+    else if (currentNode.nodeType === Node.ELEMENT_NODE) {
+        const clone = currentNode.cloneNode(false);
+        heroTitle.appendChild(clone);
+
+        const text = currentNode.textContent;
+        let i = 0;
+
+        function typeInside() {
+            if (i < text.length) {
+                clone.textContent += text[i];
+                i++;
+                setTimeout(typeInside, 30);
+            } else {
+                nodeIndex++;
+                charIndex = 0;
+                typeEffect();
+            }
+        }
+
+        typeInside();
     }
 }
 
@@ -71,7 +90,7 @@ window.addEventListener("load", typeEffect);
 
 
 // =============================
-// SCROLL TO TOP BUTTON (creat amb JS)
+// SCROLL TO TOP BUTTON
 // =============================
 const scrollBtn = document.createElement("button");
 scrollBtn.innerHTML = "↑";
