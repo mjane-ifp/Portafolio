@@ -446,10 +446,7 @@ img{
     .cos {
         padding: 5rem 5%;
     }
-
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
 
     h4 {
         font-size: 2rem;
