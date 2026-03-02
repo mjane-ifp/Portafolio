@@ -360,6 +360,13 @@ img{
     transform: scale(2);
 }
 
+.project-card.JS .project-img img {
+    filter: hue-rotate(270deg) saturate(150%) brightness(1.1);
+}
+
+.project-card.exam .project-img img {
+    filter: hue-rotate(90deg) saturate(140%) brightness(1);
+}
 
 @media (max-width:480px){
     #cap {
