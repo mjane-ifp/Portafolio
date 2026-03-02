@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js04</title>
+    <meta author="Miki">
+    <style>
+        body{
+            font-size: 3rem;
+            font-family: helvetica;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+
+        // Declaració de variables
+        var verd="verd";
+        var vermell="vermell";
+        var blau="blau"
+
+        // Prompt per demanar informació/entrada de dades
+        var resposta=prompt ("Quin color vols?");
+
+        // Comparem les dades unes amb altres
+        if (resposta == verd) {
+            document.write("Passa");
+            document.body.style.backgroundColor="green";
+            document.body.style.color="#FFF";
+        }
+
+        else if (resposta == vermell) {
+            document.write("Stop");
+            document.body.style.backgroundColor="red";
+            document.body.style.color="#FFF";
+        }
+
+        else if (resposta == blau) {
+            document.write("Extra");
+            document.body.style.backgroundColor="blue";
+            document.body.style.color="#FFF";
+        }
+
+        else {
+            document.write("Alerta");
+            document.body.style.backgroundColor="orange";
+            document.body.style.color="#FFF";
+        }
+
+
+    </script>
+</body>
+</html>

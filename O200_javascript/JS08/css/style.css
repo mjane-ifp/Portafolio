@@ -1,0 +1,100 @@
+#cub{
+    height:80px;
+    width:80px;
+    transition:1s;
+    position:relative;
+    transform-style:preserve-3d;
+}
+
+.cara{
+    width:80px;
+    height:80px;
+    font-size:80px;
+    text-align:center;
+    line-height:80px;
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.blava{
+    background:skyblue;
+    transform-origin:left;
+    transform:translateZ(-80px);
+}
+
+.groga{
+    background:yellow;
+    transform-origin:bottom;
+    transform:rotateX(90deg);
+}
+
+.vermella{
+    background:red;
+    transform:rotateY(90deg);
+    transform-origin:left;
+}
+
+.rosa{
+    background:pink;
+    transform:rotateY(-90deg);
+    transform-origin:right;
+}
+
+.lila{
+    background:violet;
+    transform:rotateX(-90deg);
+    transform-origin:top;
+}
+
+.verda{
+    background:yellowgreen;
+    transform:rotatex(0deg)
+}
+
+.contenidor{
+    margin:160px;
+    width:80px;
+    height:80px;
+    -webkit-perspective:160px;
+    perspective:160px;
+    margin: 10rem auto;
+}
+
+/*
+.cub:hover{
+transform:rotateZ(180deg) rotateY(90deg)
+}
+*/
+
+.joystick{
+    position: relative;
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+}
+
+.boto{
+    height: 4rem;
+    width: 4rem;
+    background: maroon;
+}
+
+#amunt{
+    margin-left: 4rem;
+}
+
+#avall{
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+#esquerra{
+    margin-top: -8rem;
+}
+
+#dreta{
+    margin-left: 8rem;
+    margin-top: -4rem;
+}

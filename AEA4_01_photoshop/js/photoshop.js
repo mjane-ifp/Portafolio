@@ -58,14 +58,14 @@ function contrast(){
 
 //to
 
-/*
-tirador[6].addEventListener('input', hue-rotate);
 
-function hue-rotate(){
+tirador[6].addEventListener('input', huerotate);
+
+function huerotate(){
     valor[6].innerHTML=tirador[6].value;
     imatge[6].style.filter="hue-rotate("+tirador[6].value+"deg)";
 }
-*/
+
 
 //invertir
 
