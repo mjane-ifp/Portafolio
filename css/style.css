@@ -360,6 +360,7 @@ img{
     transform: scale(2);
 }
 
+
 @media (max-width:480px){
     #cap {
         flex-direction: column;
