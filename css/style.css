@@ -368,6 +368,13 @@ img{
     filter: hue-rotate(90deg) saturate(140%) brightness(1);
 }
 
+.github:hover{
+    color: var(--primary-color);
+}
+.mail:hover{
+    color: var(--primary-color);
+}
+
 @media (max-width:480px){
     #cap {
         flex-direction: column;
